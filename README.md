@@ -2,7 +2,7 @@
 # CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/users/CorePh" >Visit Here</a> 
 
 
-A <a href=(https://github.com/CoreyPhillipsOfficial/CodeWars) style='color:#3489eb'>repository</a> filled with codewars challenges (kata).
+A <a href=(https://github.com/CoreyPhillipsOfficial/CodeWars) style='color:#3489eb'>repository</a> filled with codewars challenges.
 
 ## How It's Made:
 
