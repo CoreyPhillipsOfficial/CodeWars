@@ -1,8 +1,8 @@
 # CodeWars
 # CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/users/CorePh" >Visit Here</a> 
 
-![alt tag](https://github.com/CharlesCreativeContent/CodeWars/blob/master/Screen%20Shot%202022-02-10%20at%202.54.15%20AM.png)
-A repository filled with codewars challenges (kata).
+
+A <a href=(https://github.com/CoreyPhillipsOfficial/CodeWars) style='color:#3489eb'>repository</a> filled with codewars challenges (kata).
 
 ## How It's Made:
 
