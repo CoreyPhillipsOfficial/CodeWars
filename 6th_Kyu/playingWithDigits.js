@@ -22,3 +22,15 @@ console.log(digPow(89, 1));    // Output: 1
 console.log(digPow(92, 1));    // Output: -1
 console.log(digPow(695, 2));   // Output: 2
 console.log(digPow(46288, 3)); // Output: 51
+
+
+
+
+/*
+Alternative solution:
+
+function digPow(n, p) {
+    var x = String(n).split("").reduce((s, d, i) => s + Math.pow(d, p + i), 0)
+    return x % n ? -1 : x / n
+  }
+*/
