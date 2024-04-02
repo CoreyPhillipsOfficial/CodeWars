@@ -1,3 +1,16 @@
+// function that reverses a string with built-in functions
+function reverseStringShort(str) {
+    // use built-in functions to turn the string into an array, reverse the array, and convert the array back into a string
+    return str.split('').reverse().join('');
+}
+
+// example usage
+const originalStr = 'Hi I\'m Corey!';
+const reversedStr = reverseStringShort(originalStr);
+
+console.log(reversedStr);
+
+
 
 
 
