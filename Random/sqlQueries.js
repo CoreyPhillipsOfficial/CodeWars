@@ -4,7 +4,7 @@
 const sqlite3 = require('sqlite3').verbose();
 
 // Open a database connection
-const db = new sqlite3.Database(':memory:');
+const db = new sqlite3.Database(':memory:'); // :memory: = the database will be created in memory rather than as a file on disk
 
 // Execute a SQL query
 db.serialize(() => {

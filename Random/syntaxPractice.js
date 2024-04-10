@@ -68,3 +68,14 @@ employee1.name = 'Ernie';
 
 // Access the updated name property
 console.log(employee1.name); // Output: Ernie
+
+
+// Exception handling using try-catch blocks
+
+try {
+    // Code that may throw an exception
+    throw new Error('An error occurred,');
+} catch (error) {
+    // Code to handle exception
+    console.error('Caught an error:' error.message);
+}
