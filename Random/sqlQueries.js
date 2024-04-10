@@ -12,4 +12,15 @@ db.serialize(() => {
 
     // Insert data into the table
     const stmt = db.prepare('INSERT INTO Students (name) VALUES (?)');
-})
+    stmt.run('Alice');
+    stmt.run('Bob');
+    stmt.finalize();
+
+    // Retrieve data from the table
+    db.each('SELECT id, name FROM Students', (err, row) => {
+        console.log(`${row.id}: ${row.name}`);
+    });
+});
+
+// Close the database connection
+db.close();
