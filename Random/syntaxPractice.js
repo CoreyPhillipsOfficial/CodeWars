@@ -58,13 +58,13 @@ class Employee {
 }
 
 // Create an oject of the Employee class
-employee1 = new Employee('Tanya');
+employee1 = new Employee('Bert');
 
 // Access the name property using the getter method
-console.log(employee1.name); // Output: Tanya
+console.log(employee1.name); // Output: Bert
 
 // Update the property using the setter method
-employee1.name = 'Bert';
+employee1.name = 'Ernie';
 
 // Access the updated name property
-console.log(employee1.name); // Output: Bert
+console.log(employee1.name); // Output: Ernie
