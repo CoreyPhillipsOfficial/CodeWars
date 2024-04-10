@@ -5,6 +5,8 @@
 //         this.age = age;
 //     }
 
+const { log } = require("console");
+
 //     displayInfo() {
 //         console.log(`Name: ${this.name}, Age: ${this.age}`);
 //     }
@@ -70,6 +72,9 @@ employee1.name = 'Ernie';
 console.log(employee1.name); // Output: Ernie
 
 
+
+
+
 // Exception handling using try-catch blocks
 
 try {
@@ -78,4 +83,20 @@ try {
 } catch (error) {
     // Code to handle exception
     console.error('Caught an error:' error.message);
+}
+
+
+
+// Another example of exception handling
+
+try {
+    // Code that may throw an exception
+    const result = 10 / 0; // This will throw a division by zero error
+    console.log(result); // This line will not be executed
+} catch (error) {
+    // Code to handle the exception
+    console.error('An error occurred:' error.message); // Output: An error occurred: Infinity
+} finally {
+    // Optional: Code to be executed regardless of whther an exception occurred
+    console.log('Execution completed.'); // Output: Execution completed
 }
