@@ -17,6 +17,8 @@ function printNumbers(n) {
 console.log(printNumbers(26));
 
 
+
+
 // function printNumbers(n) {
 //     for (let i = 1; i <= n; i++) {
 
