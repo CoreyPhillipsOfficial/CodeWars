@@ -1,3 +1,4 @@
+
 // // Define a class called Person
 // class Person {
 //     constructor(name, age) {
@@ -5,7 +6,7 @@
 //         this.age = age;
 //     }
 
-const { log } = require("console");
+// const { log } = require("console");
 
 //     displayInfo() {
 //         console.log(`Name: ${this.name}, Age: ${this.age}`);
