@@ -30,7 +30,7 @@ Examples
 // }
 
 
-
+// shorter way to do this
 function digitalRoot(n) {
     return (n - 1) % 9 + 1;
 }
@@ -40,12 +40,15 @@ value1 = 16;
 value2 = 942;
 value3 = 132189;
 value4 = 493193;
+value5 = 494863;
+
 
 
 console.log(digitalRoot(value1));
 console.log(digitalRoot(value2));
 console.log(digitalRoot(value3));
 console.log(digitalRoot(value4));
+console.log(digitalRoot(value5));
 
 
 
