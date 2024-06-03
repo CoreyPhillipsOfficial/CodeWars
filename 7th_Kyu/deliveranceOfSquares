@@ -16,25 +16,34 @@ Hence the difference between square of the sum of the first ten natural numbers 
 */
 
 
-
-function differenceOfSquares(n) {
-    if (n >= 1 && n <= 100) {
-
-        let sum = 0
-        for (let i = 1; i <= n; i++) {
-            sum += i;
-        }
-        // console.log(sum);
-
-        let sumOfSquares = 0;
-        for (let i = 1; i <= n; i++) {
-            sumOfSquares += i * i;
-        }
-        // console.log(sumOfSquares);
-        return (sum * sum) - sumOfSquares
+function differenceOfSquares(x) {
+    var sum = 0, squareSum = 0, i;
+    for (i = 1; i <= x; i++) {
+        sum += i * i;
+        squareSum += i;
     }
+    return squareSum * squareSum - sum;
+}
 
-    return 'Error: n must be from 1 to 100';
+
+// function differenceOfSquares(n) {
+//     if (n >= 1 && n <= 100) {
+
+//         let sum = 0
+//         for (let i = 1; i <= n; i++) {
+//             sum += i;
+//         }
+//         // console.log(sum);
+
+//         let sumOfSquares = 0;
+//         for (let i = 1; i <= n; i++) {
+//             sumOfSquares += i * i;
+//         }
+//         // console.log(sumOfSquares);
+//         return (sum * sum) - sumOfSquares
+//     }
+
+//     return 'Error: n must be from 1 to 100';
 }
 
 console.log(differenceOfSquares(5));
