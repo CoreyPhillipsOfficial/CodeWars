@@ -17,7 +17,7 @@ Hence the difference between square of the sum of the first ten natural numbers 
 
 
 function differenceOfSquares(n) {
-    var sum = 0, squareSum = 0, i;
+    let sum = 0, squareSum = 0, i;
     for (i = 1; i <= n; i++) {
         sum += i * i;
         squareSum += i;
