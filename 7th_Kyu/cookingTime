@@ -1,7 +1,8 @@
 function cookingTime(neededPower, minutes, seconds, power) {
     let time = Math.ceil((60 * minutes + seconds) * parseInt(neededPower) / parseInt(power));
-    return `${Math.floor(time / 60)} minutes ${time % 60} seconds`;
+    return `${Math.floor(time / 60)} minutes, ${time % 60} seconds`;
 }
+
 
 // function cookingTime(neededPower, minutes, seconds, power) {
 
