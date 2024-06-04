@@ -2,17 +2,23 @@
 
 // Return as a number.
 
+
 function divCon(x) {
-    let result = 0
-    for (i = 0; i < x.length; i++) {
-        if (typeof x[i] == 'number') {
-            result += x[i]
-        } else {
-            result -= Number(x[i])
-        }
-    }
-    return result
+    return x.reduce((acc, cur) => typeof cur === 'number' ? acc + cur : acc - Number(cur), 0)
 }
+
+
+// function divCon(x) {
+//     let result = 0
+//     for (i = 0; i < x.length; i++) {
+//         if (typeof x[i] == 'number') {
+//             result += x[i]
+//         } else {
+//             result -= Number(x[i])
+//         }
+//     }
+//     return result
+// }
 
 console.log(divCon([9, 3, '7', '3']))
 console.log(divCon(['5', '0', 9, 3, 2, 1, '9', 6, 7]))
