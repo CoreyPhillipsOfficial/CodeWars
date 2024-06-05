@@ -5,21 +5,28 @@ Write a function cakes(), which takes the recipe (object) and the available ingr
 */
 
 function cakes(recipe, available) {
-    let maxCakes = Infinity;
-
-    for (let ingredient in recipe) {
-        if (!(ingredient in available)) {
-            return 0;
-        }
-        const availableAmount = available[ingredient];
-        const requiredAmount = recipe[ingredient];
-        const numberCakes = Math.floor(availableAmount / requiredAmount);
-        if (numberCakes < maxCakes) {
-            maxCakes = numberCakes;
-        }
-    }
-    return maxCakes
+    return Object.keys(recipe).reduce(function (val, ingredient) {
+        return Math.min(Math.floor(available[ingredient] / recipe[ingredient] || 0), val)
+    }, Infinity)
 }
+
+
+// function cakes(recipe, available) {
+//     let maxCakes = Infinity;
+
+//     for (let ingredient in recipe) {
+//         if (!(ingredient in available)) {
+//             return 0;
+//         }
+//         const availableAmount = available[ingredient];
+//         const requiredAmount = recipe[ingredient];
+//         const numberCakes = Math.floor(availableAmount / requiredAmount);
+//         if (numberCakes < maxCakes) {
+//             maxCakes = numberCakes;
+//         }
+//     }
+//     return maxCakes
+// }
 
 console.log(cakes({ flour: 500, sugar: 200, eggs: 1 }, { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }));
 console.log(cakes({ apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 }, { sugar: 500, flour: 2000, milk: 2000 }));
