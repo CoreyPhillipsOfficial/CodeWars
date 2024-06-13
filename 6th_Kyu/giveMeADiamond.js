@@ -26,3 +26,4 @@ function diamond(n) {
 console.log(diamond(3));
 console.log(diamond(5));
 console.log(diamond(9));
+console.log(diamond(10));
