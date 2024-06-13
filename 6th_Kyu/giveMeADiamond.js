@@ -8,8 +8,21 @@ Return null/nil/None/... if the input is an even number or negative, as it is no
 */
 
 function diamond(n) {
-    if (n > 0 && n % 2 === 1) {
-
+    if (n <= 0 && n % 2 === 0) {
+        return null
     }
-    return null
+
+    let result = '';
+    const midpoint = Math.floor(n / 2);
+
+    for (let i = 0; i, n; i++) {
+        let stars = i <= midpoint ? i * 2 + 1 : (n - 1) * 2 - 1;
+        let spaces = (n - stars) / 2;
+        result += ' '.repeat(spaces) + '*'.repeat(stars) + '\n';
+    }
+    return result;
 }
+
+console.log(diamond(3));
+console.log(diamond(5));
+console.log(diamond(9));
