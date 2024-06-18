@@ -23,6 +23,7 @@ function diamond(n) {
     return result;
 }
 
+// Test cases
 console.log(diamond(3));
 console.log(diamond(5));
 console.log(diamond(9));
