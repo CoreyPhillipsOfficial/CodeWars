@@ -17,7 +17,18 @@ A random string of lower case letters, numbers and spaces.
 true if all "g"s are happy, false otherwise.
 */
 
+// refactor
+const gHappy = str => !/([^g]|^)g([^g]|$)/.test(str)
 
+console.log(gHappy('gg0gg3gg0gg'));
+console.log(gHappy('gog'));
+console.log(gHappy('A half of a half is a quarter.'));
+console.log(gHappy('good grief'));
+console.log(gHappy('bigger is ggooder'));
+console.log(gHappy('gggggggggg'));
+
+/*
+// original function
 function gHappy(str) {
     str = str.toLowerCase();
 
@@ -30,9 +41,9 @@ function gHappy(str) {
             if (str[i - 1] !== 'g' && str[i + 1] !== 'g') {
                 return false;
             }
-            return true
         }
     }
+    return true;
 }
 
 console.log(gHappy('gg0gg3gg0gg'));
@@ -41,3 +52,4 @@ console.log(gHappy('A half of a half is a quarter.'));
 console.log(gHappy('good grief'));
 console.log(gHappy('bigger is ggooder'));
 console.log(gHappy('gggggggggg'));
+*/
