@@ -19,5 +19,24 @@ true if all "g"s are happy, false otherwise.
 
 
 function gHappy(str) {
+    str = str.toLowerCase();
 
+    if (!str.includes('g')) {
+        return true
+    }
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === 'g') {
+            if (str[i - 1] !== 'g' && str[i = 1] !== 'g') {
+                return flase;
+            }
+        }
+    }
 }
+
+console.log(gHappy('gg0gg3gg0gg'));
+console.log(gHappy('gog'));
+console.log(gHappy('A half of a half is a quarter.'));
+console.log(gHappy('good grief'));
+console.log(gHappy('bigger is ggooder'));
+console.log(gHappy('gggggggggg'));
