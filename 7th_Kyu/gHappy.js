@@ -20,6 +20,7 @@ true if all "g"s are happy, false otherwise.
 // refactor
 const gHappy = str => !/([^g]|^)g([^g]|$)/.test(str)
 
+// tests
 console.log(gHappy('gg0gg3gg0gg'));
 console.log(gHappy('gog'));
 console.log(gHappy('A half of a half is a quarter.'));
