@@ -46,6 +46,7 @@ function gHappy(str) {
     }
     return true;
 }
+*/
 
 console.log(gHappy('gg0gg3gg0gg'));
 console.log(gHappy('gog'));
@@ -53,4 +54,3 @@ console.log(gHappy('A half of a half is a quarter.'));
 console.log(gHappy('good grief'));
 console.log(gHappy('bigger is ggooder'));
 console.log(gHappy('gggggggggg'));
-*/
