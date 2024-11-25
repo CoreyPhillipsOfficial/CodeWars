@@ -1,8 +1,8 @@
-# CodeWars
+# Practice Problems
 # CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/users/CorePh" >Visit Here</a> 
+# Leetcode Challenges: <a target="_blank" href="https://leetcode.com/u/CorePh/" >Visit Here</a>
 
-
-A <a href=(https://github.com/CoreyPhillipsOfficial/CodeWars) style='color:#3489eb'>repository</a> filled with codewars challenges.
+A <a href=(https://github.com/CoreyPhillipsOfficial/CodeWars) style='color:#3489eb'>repository</a> filled with codewars challenges as well as problems from Leetcode.
 
 ## How It's Made:
 
